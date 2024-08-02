@@ -18,7 +18,7 @@
     
     
       
-        <title>Leveraging EESSI for continuous integration - European Environment for Scientific Software Installations (EESSI)</title>
+        <title>Leveraging EESSI for Continuous Integration - European Environment for Scientific Software Installations (EESSI)</title>
       
     
     
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Leveraging EESSI for continuous integration
+              Leveraging EESSI for Continuous Integration
             
           </span>
         </div>
@@ -1766,19 +1766,20 @@
   
 
 
-<h1 id="leveraging-eessi-for-continuous-integration">Leveraging EESSI for continuous integration<a class="headerlink" href="#leveraging-eessi-for-continuous-integration" title="Permanent link">&para;</a></h1>
+<h1 id="leveraging-eessi-for-continuous-integration">Leveraging EESSI for Continuous Integration<a class="headerlink" href="#leveraging-eessi-for-continuous-integration" title="Permanent link">&para;</a></h1>
 <p>EESSI is already available as both a GitHub Action and a GitLab CI/CD component, which means you can easily integrate
 it if you use continuous integration within those ecosystems.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Both of these actions support the use of <a href="https://direnv.net/"><code>direnv</code></a> to allow you to store your desired
+<p>Both of these EESSI CI tools support the use of <a href="https://direnv.net/"><code>direnv</code></a> to allow you to store your desired
 environment within a <code>.envrc</code> file within your repository. See the documentation of the individual tools for
 detailed usage.</p>
 </div>
 <h2 id="the-eessi-github-action">The EESSI GitHub Action<a class="headerlink" href="#the-eessi-github-action" title="Permanent link">&para;</a></h2>
 <p>You can find the EESSI GitHub Action can be found on the <a href="https://github.com/marketplace">GitHub Marketplace</a>,
-at https://github.com/marketplace/actions/eessi .
-Below is a minimal example of how to leverage the action, for detailed usage please refer to the official documentation.</p>
+at <a href="https://github.com/marketplace/actions/eessi">https://github.com/marketplace/actions/eessi</a> .
+Below is a minimal example of how to leverage the action, for detailed usage please refer to the official action
+documentation.</p>
 <div class="copy highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Minimal usage</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">push</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">pull_request</span><span class="p p-Indicator">]</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">jobs</span><span class="p">:</span>
@@ -1793,8 +1794,9 @@ Below is a minimal example of how to leverage the action, for detailed usage ple
 </code></pre></div>
 <h2 id="the-eessi-gitlab-cicd-component">The EESSI GitLab CI/CD component<a class="headerlink" href="#the-eessi-gitlab-cicd-component" title="Permanent link">&para;</a></h2>
 <p>The EESSI GitLab CI/CD component can be found in the <a href="https://gitlab.com/explore/catalog">GitLab CI/CD Catalog</a>, at
-https://gitlab.com/explore/catalog/eessi/gitlab-eessi .
-Below is a minimal example of how to leverage the action, for detailed usage please refer to the official documentation. </p>
+<a href="https://gitlab.com/explore/catalog/eessi/gitlab-eessi">https://gitlab.com/explore/catalog/eessi/gitlab-eessi</a> .
+Below is a minimal example of how to leverage the component, for detailed usage please refer to the official
+component documentation.</p>
 <div class="copy highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">include</span><span class="p">:</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">component</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$CI_SERVER_FQDN/eessi/gitlab-eessi/eessi@1.0.5</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
